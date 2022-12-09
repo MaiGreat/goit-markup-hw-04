@@ -154,6 +154,10 @@ img {
     background: var(--main-text-color);
     padding: 192px 0 192px 0;
     text-align: center;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    background-size: cover;
 }
 
 .hero .hero-titel {
@@ -209,12 +213,14 @@ img {
     margin: -1px;
 }
 
-/*main-page*/
+/*-------------------------------main-page------------------*/
 
 
 /*.project:not(:last-child) {
     margin-right: 24px;
 }*/
+
+/*--------------------------ABOUT-US----------------------*/
 .about-us > h3 {
     margin-bottom: 8px;
     width: 264px;
@@ -223,6 +229,38 @@ img {
 .about-us > p {
     margin: 0;
 }
+
+.about-us::before{
+    content: "";
+    display: block;
+    background-color: var(--logo-past-text);
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*.about-us:nth-child(1)::before {
+background-image: url(../images/antenna.svg);
+}*/
+
+.antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.diagram::before{
+    background-image: url(../images/diagram.svg)
+}
+
+.astronaut::before{
+    background-image: url(../images/astronaut.svg)
+}
+
 
 .team {
     background: var(--logo-past-text);
