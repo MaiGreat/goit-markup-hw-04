@@ -270,6 +270,9 @@ background-image: url(../images/antenna.svg);
     padding: 32px 50px;
 }
 
+.team-text {
+    margin-bottom: 8px;
+}
 
 .card-team {
     background: #FFFFFF;
@@ -282,10 +285,18 @@ background-image: url(../images/antenna.svg);
     padding-top: 0;
 }
 
-.icon-team  {
+.icon-team {
     display: flex;
-    justify-content: space-around;
-    margin: 12px 0 0 0;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: ;
+    margin: 0;
 }
 
 .social-link {
@@ -296,9 +307,30 @@ background-image: url(../images/antenna.svg);
     background-color: #4D5AE5;
 }
 
+/*--------------------------------------CUSTOMERS--------------------------------*/
+.section .title-customers {
+line-height: 1.16;
+letter-spacing: 0.03em;
+font-weight: 700;
+font-size: 36px;
+text-align: center;
+}
 
+.customers {
+    display: flex;
 
+}
 
+.customers-icon {
+    display: inline-block;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: #E5E5E5;
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    
+}
 
 .section .section-title {
 font-weight: 700;
