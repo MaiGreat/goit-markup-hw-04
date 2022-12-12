@@ -158,6 +158,7 @@ img {
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
     background-size: cover;
+    max-width: 1440px;
 }
 
 .hero .hero-titel {
@@ -189,7 +190,7 @@ img {
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
-
+    border: none;
 }
 
 .hero .button-hero:active, 
@@ -197,6 +198,8 @@ img {
 .hero .button-hero:focus {
     background: #404BBF;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 
@@ -266,11 +269,6 @@ background-image: url(../images/antenna.svg);
     background: var(--logo-past-text);
 }
 
-/*
-
-.team-text {
-    margin-bottom: 8px;
-}*/
 
 .card-team {
     background: #FFFFFF;
@@ -392,6 +390,10 @@ text-align: center;
     padding: 32px 16px 32px 16px;
 }
 
+.portfolio-link:hover {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 /*button*/
 .nav-button {
@@ -409,6 +411,7 @@ text-align: center;
 .nav-button:active {
     color: var(--hero-text);
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav-button {
@@ -425,6 +428,8 @@ margin-bottom: 72px;
 gap: 24px;
 }
 
+
+
 .second {
     padding-top: 96px;
 }
@@ -439,6 +444,7 @@ gap: 24px;
 
 .footer-page {
     display: flex;
+    
 }
 
 .logo-past {color: var(--logo-past-text);
@@ -467,14 +473,11 @@ gap: 24px;
 
 
 
-.media-link {
-    fill: var(--logo-past-text);
-}
-
 .social-media {
     display: flex;
     gap: 16px;
-
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .media-list {
@@ -486,12 +489,13 @@ gap: 24px;
 
 }
 
-.media-icon {
+.media-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    fill: var(--logo-past-text);
 }
 
 
