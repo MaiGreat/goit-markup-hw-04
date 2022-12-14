@@ -159,12 +159,13 @@ img {
     url(../images/people-office.jpg);
     background-size: cover;
     max-width: 1440px;
+    margin: auto;
 }
 
 .hero .hero-titel {
 
     color: var(--hero-text);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -269,6 +270,10 @@ background-image: url(../images/antenna.svg);
     background: var(--logo-past-text);
 }
 
+.team-img {
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
 
 .card-team {
     background: #FFFFFF;
@@ -285,7 +290,7 @@ background-image: url(../images/antenna.svg);
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
+    margin-top: 12px;
     margin-bottom: 32px;
 }
 
@@ -327,7 +332,7 @@ margin-bottom: 72px;
     display: inline-block;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    background-color: #E5E5E5;
+    
     width: 168px;
     height: 88px;
     
@@ -337,15 +342,20 @@ margin-bottom: 72px;
     fill: #8E8F99;
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-icon:hover
+ {
     background-color: #FFFFFF;
     fill: var(--accent-color);
     border: 1px solid #4D5AE5;
     border-radius: 4px;
 }
 
-
+.customers-list:focus {
+    background-color: #FFFFFF;
+        fill: var(--accent-color);
+        border: 1px solid #4D5AE5;
+        border-radius: 4px;
+}
 
 
 
@@ -473,7 +483,8 @@ gap: 24px;
 }
 
 .media-list:hover,
-.media-list:active {
+.media-list:active,
+.media-list:focus {
     background-color: #31D0AA;
 }
 
